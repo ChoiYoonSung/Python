@@ -1,0 +1,104 @@
+-- VERSION_5
+-- START DISKCACHE_3
+D:\workspace_python\.metadata\.plugins\org.eclipse.core.resources\.projects\HelloPython\com.python.pydev.analysis\v2_indexcache
+dev02.exec03|1620011913229780200|D:\workspace_python\HelloPython\dev02\exec03.py
+dev02.exec02|1620012620898487400|D:\workspace_python\HelloPython\dev02\exec02.py
+dev02.exec01|1620012405692088700|D:\workspace_python\HelloPython\dev02\exec01.py
+dev02.myva2|1620001600425373500|D:\workspace_python\HelloPython\dev02\myva2.py
+dev02.exec05|1620011923332365800|D:\workspace_python\HelloPython\dev02\exec05.py
+dev02.myrnd|1620008846333380600|D:\workspace_python\HelloPython\dev02\myrnd.py
+dev02.exec04|1620011920964433500|D:\workspace_python\HelloPython\dev02\exec04.py
+dev02.myrnd2|1620008479041566800|D:\workspace_python\HelloPython\dev02\myrnd2.py
+dev02.3dan|1620006372399683200|D:\workspace_python\HelloPython\dev02\3dan.py
+dev02.mygawi|1620012299206412400|D:\workspace_python\HelloPython\dev02\mygawi.py
+dev01.Hello|1619746379280630400|D:\workspace_python\HelloPython\dev01\Hello.py
+dev02.asif01|1620003856872788500|D:\workspace_python\HelloPython\dev02\asif01.py
+dev03.myOop01|1620091855084546400|D:\workspace_python\HelloPython\dev03\myOop01.py
+dev02.asif02|1620004375056794100|D:\workspace_python\HelloPython\dev02\asif02.py
+dev02.myfor01|1620005029393121600|D:\workspace_python\HelloPython\dev02\myfor01.py
+dev02.myva|1620001244835099400|D:\workspace_python\HelloPython\dev02\myva.py
+dev03.myDef03|1620086948537760600|D:\workspace_python\HelloPython\dev03\myDef03.py
+dev03.myDef02|1620013412843000000|D:\workspace_python\HelloPython\dev03\myDef02.py
+dev03.myDef01|1620086700236611100|D:\workspace_python\HelloPython\dev03\myDef01.py
+-- END DISKCACHE
+-- START DICTIONARY
+42
+26=dev02.exec03
+8=dev02.exec02
+2=dev02.exec01
+29=D:\workspace_python\HelloPython\dev02\mygawi.py
+39=Human.__init__
+14=dev02.exec05
+10=dev02.exec04
+5=D:\workspace_python\HelloPython\dev02\asif01.py
+17=D:\workspace_python\HelloPython\dev03\myDef03.py
+9=D:\workspace_python\HelloPython\dev02\exec04.py
+30=dev02.mygawi
+19=D:\workspace_python\HelloPython\dev03\myDef01.py
+25=D:\workspace_python\HelloPython\dev02\exec03.py
+3=D:\workspace_python\HelloPython\dev02\myva2.py
+1=D:\workspace_python\HelloPython\dev02\exec01.py
+11=D:\workspace_python\HelloPython\dev02\myva.py
+28=dev02.myfor01
+18=dev03.myDef03
+41=Animal.__init__
+16=dev03.myDef02
+20=dev03.myDef01
+38=Human
+27=D:\workspace_python\HelloPython\dev02\myfor01.py
+4=dev02.myva2
+32=dev02.myrnd
+36=dev02.myrnd2
+24=dev02.3dan
+13=D:\workspace_python\HelloPython\dev02\exec05.py
+7=D:\workspace_python\HelloPython\dev02\exec02.py
+15=D:\workspace_python\HelloPython\dev03\myDef02.py
+33=D:\workspace_python\HelloPython\dev02\asif02.py
+6=dev02.asif01
+22=dev03.myOop01
+35=D:\workspace_python\HelloPython\dev02\myrnd2.py
+37=Animal
+40=Human.goHakwon
+31=D:\workspace_python\HelloPython\dev02\myrnd.py
+42=Animal.mantang
+34=dev02.asif02
+12=dev02.myva
+21=D:\workspace_python\HelloPython\dev03\myOop01.py
+23=D:\workspace_python\HelloPython\dev02\3dan.py
+-- END DICTIONARY
+-- START TREE 1
+20
+a|7|a!1^1#1*19@a!3^1#1*35@a!5^1#1*51@a!7^1#1*67@a!9^1#1*83@a!11^1#1*99@a!13^1#1*115@
+add|3|add!15^1#5*130@addmin!17^1#5*146@add!19^1#5*162@
+ani|1|Animal!21^1#7*177@
+arr|7|arr!13^3#1*115@arr!23^1#1*195@arr!25^3#1*211@arrA!27^1#1*227@arr!9^3#1*83@arr!7^3#1*67@arrB!27^5#1*227@
+b|7|b!9^2#1*83@b!11^2#1*99@b!13^2#1*115@b!5^2#1*51@b!1^2#1*19@b!3^2#1*35@b!7^2#1*67@
+c|1|c!3^3#1*35@
+com|3|com!29^3#1*243@com!31^5#1*259@com2!31^6#1*259@
+d|1|d!3^4#1*35@
+dan|1|dan!25^1#1*211@
+dog|0|
+hol|0|
+hum|2|hum!21^19#1*179@Human!21^11#7*177@
+jin|0|
+jum|1|jumsu!33^1#1*275@
+min|4|mine!31^4#1*259@mine!29^2#1*243@min2!17^5#1*147@min!19^4#5*162@
+ran|1|rand!31^10#1*259@
+res|5|result!13^4#1*115@result!29^4#1*243@result!7^4#1*67@result!31^7#1*259@result!9^4#1*83@
+rnd|3|rnd!35^4#5*291@rnd!31^9#1*259@rnd!29^6#1*243@
+sok|0|
+sum|3|sum!15^4#1*131@sum!1^3#1*19@sum!19^7#1*163@
+-- END TREE
+-- START TREE 2
+10
+__i|2|__init__!37&21^2#9*178@__init__!38&21^12#9*178@
+eat|1|eat!37&21^5#9*178@
+fla|2|flag_cook!39&21^14#9*179@flag_cook!40&21^17#9*179@
+ful|2|fullness!41&21^3#9*179@fullness!42&21^9#9*179@
+goh|1|goHakwon!38&21^16#9*178@
+man|1|mantang!37&21^8#9*178@
+pow|0|
+pra|0|
+sel|0|
+tra|0|
+-- END TREE

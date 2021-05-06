@@ -1,0 +1,7 @@
+package day03;
+
+public class Human extends Animal{
+	public boolean power_cook = true;
+	
+	
+}

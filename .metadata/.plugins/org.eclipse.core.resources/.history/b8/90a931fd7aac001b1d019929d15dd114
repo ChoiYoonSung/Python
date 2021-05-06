@@ -1,0 +1,9 @@
+class JindoDog:
+    def __init__(self):
+        self.power_of_bark = 0
+    
+    def train(self):
+        self.power_of_bark += 1
+    
+class SokchoSeagal:
+    

@@ -1,0 +1,14 @@
+from dask.array.random import randint
+mine = input("홀/짝을 선택하세요")
+
+rnd = randint(1,2)%2
+hole = '' 
+if rnd == 1:
+    hole = '홀'
+else:
+    hole = '짝'
+
+if mine == hole:
+    print("맞췄습니다.")
+else
+    print("틀렸습니다.")

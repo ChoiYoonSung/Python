@@ -1,0 +1,4 @@
+arr = range(9)
+
+for i in arr :
+    print(str(3)+ " * " + str((i+1)) + " = " + str((i+1)*3))

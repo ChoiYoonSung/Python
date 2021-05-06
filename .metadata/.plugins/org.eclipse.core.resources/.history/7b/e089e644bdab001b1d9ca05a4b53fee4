@@ -1,0 +1,10 @@
+a = int(input("첫 숫자를 입력하시오"))
+b = int(input("끝 숫자를 입력하시오"))
+arr = [a,b]
+result = 0;
+
+for i in arr:
+    if a%2 == 0:
+        result += a
+
+print(result)

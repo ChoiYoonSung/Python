@@ -1,0 +1,7 @@
+arr = [1,2,3,4,5]
+
+print(len(arr))
+
+arrb = range(4)
+
+print(arrb)

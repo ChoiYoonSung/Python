@@ -1,0 +1,3 @@
+class JindoDog:
+    def __init__(self):
+        

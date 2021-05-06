@@ -1,0 +1,4 @@
+jumsu = 60
+
+if jumsu >= 90 :
+    

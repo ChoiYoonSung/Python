@@ -1,0 +1,5 @@
+a =  "True"
+b = 1
+c = False
+
+print(c + a)
