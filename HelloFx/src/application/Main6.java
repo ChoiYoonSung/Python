@@ -36,12 +36,12 @@ public class Main6 extends Application {
 					int a2 = Integer.parseInt(tf2.getText());
 					int a3 = 0;
 					for(int i = a1; i <= a2; i++) {
-						if(i%2 == 1) continue;
-						a3 += i;
+						if(i%2 == 0) {
+							a3 += i;
+						}
 					}
 					tf3.setText(a3 + "");
 				}
-				
 			});
 			
 		} catch(Exception e) {

@@ -43,7 +43,7 @@ public class Main7 extends Application {
 					}else {
 						com = "보";
 					}
-					tfCom.setText(com);
+					
 					if(mine.equals("가위")) {
 						if(com.equals("가위")) {
 							result = "비겼습니다.";
@@ -71,6 +71,7 @@ public class Main7 extends Application {
 					}else {
 						result = "잘못된 입력입니다.";
 					}
+					tfCom.setText(com);
 					tfResult.setText(result);
 					
 				}

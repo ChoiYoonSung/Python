@@ -14,6 +14,8 @@ import javafx.stage.Stage;
 
 	
 public class Main9 extends Application {
+	TextField tf ;
+	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
@@ -23,7 +25,7 @@ public class Main9 extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.show();	
 			
-			TextField tf = (TextField) scene.lookup("#tf");
+			tf = (TextField) scene.lookup("#tf");
 			Button btn1 = (Button) scene.lookup("#btn1");
 			Button btn2 = (Button) scene.lookup("#btn2");
 			Button btn3 = (Button) scene.lookup("#btn3");
@@ -39,10 +41,11 @@ public class Main9 extends Application {
 			btn1.setOnMouseClicked(new EventHandler<Event>() {
 				@Override
 				public void handle(Event event) {
-					String text1 = btn1.getText();
-					String tfResult = tf.getText();
-					tfResult += text1;
-					tf.setText(tfResult);
+//					String text1 = btn1.getText();
+//					String tfResult = tf.getText();
+//					tfResult += text1;
+//					tf.setText(tfResult);
+					click("1");
 				}
 			});
 			btn2.setOnMouseClicked(new EventHandler<Event>() {
@@ -163,6 +166,13 @@ public class Main9 extends Application {
 			e.printStackTrace();
 		}
 		
+	}
+	
+	public void click(String txt) {
+//		Button temp = (Button) event.getTarget();
+//		String txt = temp.getText();
+		String tfResult = tf.getText();
+		tf.setText(tfResult + txt);
 	}
 	
 	public static void main(String[] args) {
