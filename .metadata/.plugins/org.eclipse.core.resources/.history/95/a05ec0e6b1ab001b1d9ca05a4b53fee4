@@ -1,4 +1,0 @@
-import math
-mine = input("홀/짝을 선택하세요")
-print(mine)
-

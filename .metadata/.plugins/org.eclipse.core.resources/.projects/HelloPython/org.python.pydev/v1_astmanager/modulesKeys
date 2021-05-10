@@ -1,6 +1,8 @@
 MODULES_MANAGER_V3
 day01.Hello|D:\workspace_python\HelloPython\day01\Hello.py
+day01.__init__|D:\workspace_python\HelloPython\day01|^
 day02.3dan|D:\workspace_python\HelloPython\day02\3dan.py
+day02.__init__|D:\workspace_python\HelloPython\day02|^
 day02.asif01|D:\workspace_python\HelloPython\day02\asif01.py
 day02.asif02|D:\workspace_python\HelloPython\day02\asif02.py
 day02.exec01|D:\workspace_python\HelloPython\day02\exec01.py
@@ -14,11 +16,13 @@ day02.myrnd|D:\workspace_python\HelloPython\day02\myrnd.py
 day02.myrnd2|D:\workspace_python\HelloPython\day02\myrnd2.py
 day02.myva|D:\workspace_python\HelloPython\day02\myva.py
 day02.myva2|D:\workspace_python\HelloPython\day02\myva2.py
+day03.__init__|D:\workspace_python\HelloPython\day03|^
 day03.myDef01|D:\workspace_python\HelloPython\day03\myDef01.py
 day03.myDef02|D:\workspace_python\HelloPython\day03\myDef02.py
 day03.myDef03|D:\workspace_python\HelloPython\day03\myDef03.py
 day03.myOop01|D:\workspace_python\HelloPython\day03\myOop01.py
 day03.myOop02|D:\workspace_python\HelloPython\day03\myOop02.py
+day04.__init__|D:\workspace_python\HelloPython\day04|^
 day04.myqt01|D:\workspace_python\HelloPython\day04\myqt01.py
 day04.myqt02|D:\workspace_python\HelloPython\day04\myqt02.py
 day04.myqt03|D:\workspace_python\HelloPython\day04\myqt03.py
@@ -28,3 +32,6 @@ day04.myqt06|D:\workspace_python\HelloPython\day04\myqt06.py
 day04.myqt07|D:\workspace_python\HelloPython\day04\myqt07.py
 day04.myqt08|D:\workspace_python\HelloPython\day04\myqt08.py
 day04.myqt09|D:\workspace_python\HelloPython\day04\myqt09.py
+day5.mycrawling01|D:\workspace_python\HelloPython\day5\mycrawling01.py
+day5.mycrawling02_naver|D:\workspace_python\HelloPython\day5\mycrawling02_naver.py
+day5.myenum|D:\workspace_python\HelloPython\day5\myenum.py

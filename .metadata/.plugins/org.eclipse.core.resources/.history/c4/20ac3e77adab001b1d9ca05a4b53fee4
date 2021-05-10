@@ -1,8 +1,0 @@
-arra = [1,2,3,4,5]
-
-print(len(arra))
-
-arrb = range(4)
-
-print(arra)
-print(arrb)

@@ -1,7 +1,0 @@
-arr = range(9)
-
-for i in len(arr) :
-    a = arr(i)
-    if a == 0 :
-        continue
-    print(a*3)

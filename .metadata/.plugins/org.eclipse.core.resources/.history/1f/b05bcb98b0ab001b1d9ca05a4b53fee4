@@ -1,4 +1,0 @@
-for i in range(10) :
-    if i == 0 :
-        continue
-    print(str(3)+ " * " + str(i) + " = " + str(i*3))

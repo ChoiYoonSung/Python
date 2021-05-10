@@ -1,5 +1,0 @@
-from dask.array.random import randint
-mine = input("홀/짝을 선택하세요")
-print(mine)
-
-a = randint(1)

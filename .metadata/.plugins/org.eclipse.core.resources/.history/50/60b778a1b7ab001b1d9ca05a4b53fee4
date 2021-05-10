@@ -1,6 +1,0 @@
-from dask.array.random import random
-mine = input("가위/바위/보")
-com = ""
-result = ""
-
-rnd = random.random()

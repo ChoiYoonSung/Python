@@ -1,6 +1,0 @@
-arr = range(10)
-
-for i in arr :
-    if i == 0 :
-        continue
-    print(str(3)+ "*" + str(i) + "=" + str(i*3))
