@@ -1,7 +1,0 @@
-package day03;
-
-public class AwtTest {
-	public static void main(String[] args) {
-		
-	}
-}
