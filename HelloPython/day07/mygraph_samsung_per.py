@@ -17,7 +17,7 @@ def getPrices(s_name, i):
     stock_n = np.array(stock)
     return stock_n
 
-def getName():
+def getNames():
     sql = "select s_name from stock group by s_name order by crawl_date"
     curs.execute(sql)
      
@@ -46,20 +46,20 @@ def rndColor():
     return color
 
 if __name__ == '__main__':
-    getName = getName()
+    names = getNames()
     
     fig = plt.figure()
     ax = plt.axes(projection='3d')
     percent = ""
     temp = ""
     print("Stock Chart loading..")
-    for i, name in enumerate(getName):
+    for i, name in enumerate(names):
         getNumpy(i, getPrices(name, i))
         i += 1
-        percent = str((i/ len(getName))*100)[:str((i/ len(getName))*100).index('.')]
+        percent = str((i/ len(names))*100)[:str((i/ len(names))*100).index('.')]
         if not percent == temp:
-             print(percent + "%")
-             temp = percent
+            print(percent + "%")
+            temp = percent
     
     conn.close()
     plt.show()
