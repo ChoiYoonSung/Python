@@ -13,6 +13,7 @@ class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
         self.index = 0
+        self.flag_bw = True
         self.black_cnt = 0
         self.white_cnt = 0
         self.setupUi(self)
@@ -64,30 +65,26 @@ class WindowClass(QMainWindow, form_class):
                     self.pb2d[i][j].setIcon(QIcon('1.png'))
                 if self.arr2d[i][j] == 2:
                     self.pb2d[i][j].setIcon(QIcon('2.png'))
-                    
+    
     def BtnClick(self):
-        self.index += 1
         arr = (self.sender().toolTip()).split(",")
         i = int(arr[0])
         j = int(arr[1])
-        if self.index%2 == 1: #흑돌
-            if self.arr2d[i][j] == 0:
-                self.arr2d[i][j] = 1
-                self.black_cnt += 1
-                print("흑돌 : " + str(self.black_cnt) + "번째 수")
-            else:
-                #같은 곳에 돌을 두었을 때
-                self.index -= 1 
-        elif self.index%2 == 0: #백돌
-            if self.arr2d[i][j] == 0:
-                self.arr2d[i][j] = 2
-                self.white_cnt += 1
-                print("백돌 : " + str(self.white_cnt) + "번째 수")
-            else:
-                #같은 곳에 돌을 두었을 때
-                self.index -= 1
+        if self.arr2d[i][j] > 0:
+            return
+        
+        if self.flag_bw == True: #흑돌
+            self.arr2d[i][j] = 1
+            self.black_cnt += 1
+            print("흑돌 : " + str(self.black_cnt) + "번째 수")
+        else: #백돌
+            self.arr2d[i][j] = 2
+            self.white_cnt += 1
+            print("백돌 : " + str(self.white_cnt) + "번째 수")
+        
         self.myrender()
-
+        self.flag_bw = not self.flag_bw
+            
 if __name__ == '__main__':
    app = QApplication(sys.argv)
    myWindow = WindowClass()
