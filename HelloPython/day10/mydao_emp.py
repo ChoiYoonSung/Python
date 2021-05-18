@@ -26,13 +26,17 @@ class DaoEmp:
     
     def myupdate(self, e_id, e_name, birth):
         curs = self.conn.cursor()
-        sql = "update emp set e_name={}, birth={} where e_id={}".format(e_name, birth, e_id)
+        sql = """
+            update emp 
+            set e_name = '{}', birth='{}' 
+            where e_id='{}'""".format(e_name, birth, e_id)
         cnt = curs.execute(sql)
         self.conn.commit()
         return cnt
     
     def mydelete(self, e_id):
         curs = self.conn.cursor()
+        # sql = f"delete from emp where e_id={e_id}"        # python v3.4 이상
         sql = "delete from emp where e_id={}".format(e_id)
         cnt = curs.execute(sql)
         self.conn.commit()
@@ -45,7 +49,7 @@ if __name__ == '__main__':
     de = DaoEmp()
     # list = de.myselect()
     # cnt = de.myinsert('2','2','2')
-    # cnt = de.myupdate('2','3','3')
-    cnt = de.mydelete('2')
+    cnt = de.myupdate('2','4','4')
+    # cnt = de.mydelete('2')
     # print(list)
     print(cnt)

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script src="jquery-3.6.0.js"></script>
+		<script type="text/javascript">
+			function fn_setTable(e_id, kor, eng, math){
+				$('#e_id').val(e_id);
+				$('#kor').val(kor);
+				$('#eng').val(eng);
+				$('#math').val(math);
+			}
+			
+			function fn_add(){
+			    var param = {
+			            'e_id': $('#e_id').val(),
+			            'kor' : $('#kor').val(),
+			            'eng' : $('#eng').val(),
+			            'math' : $('#math').val(),
+			        }
+			        $.ajax({
+			            type: 'POST',
+			            url: 'add.ajax',
+			            data: JSON.stringify(param),
+			            dataType : 'JSON',
+			            contentType: "application/json",
+			            success: function(data){
+			                if(data.msg == "OK"){
+			                	location.reload();
+			                	alert('성공적으로 추가되었습니다.');
+			                }else{
+			                	alert('실행도중 문제가 발생하였습니다.');
+			                }
+			            },
+			            error: function(request, status, error){
+			                alert('ajax 통신 실패' ,error)
+			            }
+			        })
+			}
+			
+			function fn_upd(){
+			    var param = {
+			            'e_id': $('#e_id').val(),
+			            'kor' : $('#kor').val(),
+			            'eng' : $('#eng').val(),
+			            'math' : $('#math').val(),
+			        }
+			        $.ajax({
+			            type: 'POST',
+			            url: 'upd.ajax',
+			            data: JSON.stringify(param),
+			            dataType : 'JSON',
+			            contentType: "application/json",
+			            success: function(data){
+			                if(data.msg == "OK"){
+			                	location.reload();
+			                	alert('성공적으로 수정되었습니다.');
+			                }else{
+			                	alert('실행도중 문제가 발생하였습니다.');
+			                }
+			            },
+			            error: function(request, status, error){
+			                alert('ajax 통신 실패' ,error)
+			            }
+			        })
+			}
+			
+			function fn_del(){
+			    var param = {
+			            'e_id': $('#e_id').val(), 
+			        }
+			        $.ajax({
+			            type: 'POST',
+			            url: 'del.ajax',
+			            data: JSON.stringify(param),
+			            dataType : 'JSON',
+			            contentType: "application/json",
+			            success: function(data){
+			                if(data.msg == "OK"){
+			                	location.reload();
+			                	alert('성공적으로 삭제되었습니다.');
+			                }else{
+			                	alert('실행도중 문제가 발생하였습니다.');
+			                }
+			            },
+			            error: function(request, status, error){
+			                alert('ajax 통신 실패' ,error)
+			            }
+			        })
+			}
+		</script>
+	</head>
+	<body>
+		<table border="1px solid black">
+			<tr>
+				<td>
+					<table border="1px solid black">
+						<tr>
+							<th>Id</th>
+							<th>Kor</th>
+							<th>Eng</th>
+							<th>Math</th>
+						</tr>
+						{% for ex in myexam %}
+						<tr>
+							<td><a href="javascript:fn_setTable('{{ex.e_id}}',{{ex.kor}},{{ex.eng}},{{ex.math}})">{{ex.e_id}}</a></td>
+							<td>{{ex.kor}}</td>
+							<td>{{ex.eng}}</td>
+							<td>{{ex.math}}</td>
+						</tr>
+						{% endfor %}
+					</table>
+				</td>
+				<td>
+					<table border="1px solid black">
+						<tr>
+							<th>Id</th>
+							<td><input type="text" id="e_id" name="e_id" /></td>
+						</tr>
+						<tr>
+							<th>Kor</th>
+							<td><input type="text" id="kor" name="kor" /></td>
+						</tr>
+						<tr>
+							<th>Eng</th>
+							<td><input type="text" id="eng" name="eng" /></td>
+						</tr>
+						<tr>
+							<th>Math</th>
+							<td><input type="text" id="math" name="math" /></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="button" onclick="fn_add()" value="추가">
+								<input type="button" onclick="fn_upd()" value="수정">
+								<input type="button" onclick="fn_del()" value="삭제">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
