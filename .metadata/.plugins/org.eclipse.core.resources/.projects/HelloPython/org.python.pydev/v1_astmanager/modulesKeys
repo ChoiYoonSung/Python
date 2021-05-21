@@ -51,6 +51,12 @@ day11.myexamcrud|D:\workspace_python\HelloPython\day11\myexamcrud.py
 day12.__init__|D:\workspace_python\HelloPython\day12|^
 day12.mycv01|D:\workspace_python\HelloPython\day12\mycv01.py
 day12.mycv02_gray|D:\workspace_python\HelloPython\day12\mycv02_gray.py
+day13.__init__|D:\workspace_python\HelloPython\day13|^
+day13.mycheck|D:\workspace_python\HelloPython\day13\mycheck.py
+day13.mycv03_image_save|D:\workspace_python\HelloPython\day13\mycv03_image_save.py
+day13.mycv04_crop|D:\workspace_python\HelloPython\day13\mycv04_crop.py
+day13.mycv05_degree|D:\workspace_python\HelloPython\day13\mycv05_degree.py
+day13.myomok20|D:\workspace_python\HelloPython\day13\myomok20.py
 myarray|D:\workspace_python\HelloPython\day08\myarray.py
 mycrawling04_stock|D:\workspace_python\HelloPython\day07\mycrawling04_stock.py
 mycrud|D:\workspace_python\HelloPython\day10\mycrud.py

@@ -15,6 +15,8 @@ class WindowClass(QMainWindow, form_class):
         self.index = 0
         self.black_cnt = 0
         self.white_cnt = 0
+        self.con_x = 0
+        self.con_y = 0
         self.flag_bw = True
         self.flag_result = True
         self.setupUi(self)
@@ -77,7 +79,9 @@ class WindowClass(QMainWindow, form_class):
             stone = 2
             print("백돌 : " + str(self.white_cnt) + "번째 수")
             self.lbl.setText("흑돌 차례")
-        
+        self.winner(i, j, stone)
+    
+    def winner(self,i,j,stone):
         up = self.getUp(i, j,stone)
         dw = self.getDw(i, j, stone)
         le = self.getLe(i, j, stone)
@@ -104,6 +108,7 @@ class WindowClass(QMainWindow, form_class):
             self.flag_result = False
         self.flag_bw = not self.flag_bw
         
+    
     def getUp(self,i,j,stone):
         cnt = 0
         try:

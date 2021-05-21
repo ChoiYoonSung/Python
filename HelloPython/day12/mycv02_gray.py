@@ -1,4 +1,5 @@
 import cv2
+
 img = cv2.imread('coffee.jpg',cv2.IMREAD_GRAYSCALE)
 print(img)
 cv2.imshow('image', img)
