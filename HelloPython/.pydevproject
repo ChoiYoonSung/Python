@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?eclipse-pydev version="1.0"?><pydev_project>
-                    
+                        
+    
     
     
     
@@ -13,18 +14,23 @@
         <path>/${PROJECT_DIR_NAME}/day10/static</path>
         <path>/${PROJECT_DIR_NAME}/day11/static</path>
         <path>/${PROJECT_DIR_NAME}/day11/templates</path>
+        <path>/${PROJECT_DIR_NAME}/day15/train</path>
+        <path>/${PROJECT_DIR_NAME}/day15/test</path>
     </pydev_pathproperty>
-                    
+                        
+    
     
     
     
     <pydev_property name="org.python.pydev.PYTHON_PROJECT_VERSION">python interpreter</pydev_property>
-                    
+                        
+    
     
     
     
     <pydev_property name="org.python.pydev.PYTHON_PROJECT_INTERPRETER">Default</pydev_property>
-                
+                    
+
 
 
 

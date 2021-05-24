@@ -1,10 +1,9 @@
 import sys
 from PyQt5 import uic, QtWidgets
-from PyQt5.QtWidgets import QMainWindow, QApplication, QMessageBox
+from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5.QtGui import QIcon
 from PyQt5.Qt import QPushButton, QRect
 from PyQt5.QtCore import QSize
-from _ast import If
 
 form_class = uic.loadUiType("myomok20.ui")[0]
 
@@ -37,7 +36,8 @@ class WindowClass(QMainWindow, form_class):
         self.myrender()
         self.pbReset.clicked.connect(self.BtnReset)
         self.lbl.setText("오목 준비중")
-        
+    
+    
     def BtnReset(self):
         self.black_cnt = 0
         self.white_cnt = 0
@@ -50,7 +50,8 @@ class WindowClass(QMainWindow, form_class):
         self.arr2d = [[0 for i in range(20)] for j in range(20)]
         self.myrender()
         self.lbl.setText("오목 준비중")
-
+        
+        
     def myrender(self):
         for i in range(20):
             for j in range(20):
@@ -60,6 +61,7 @@ class WindowClass(QMainWindow, form_class):
                     self.pb2d[i][j].setIcon(QIcon('1.png'))
                 if self.arr2d[i][j] == 2:
                     self.pb2d[i][j].setIcon(QIcon('2.png'))
+    
     
     def BtnClick(self):
         if not self.flag_result:
@@ -79,6 +81,7 @@ class WindowClass(QMainWindow, form_class):
         
         self.win(i, j, self.stone)
         self.com()
+    
     
     def com(self):
         if not self.flag_result:
@@ -104,6 +107,7 @@ class WindowClass(QMainWindow, form_class):
         else:
             self.com_y = 0
             self.com_x += 1
+    
     
     def win(self,i,j,stone):
         up = self.getUp(i, j, stone)

@@ -57,6 +57,14 @@ day13.mycv03_image_save|D:\workspace_python\HelloPython\day13\mycv03_image_save.
 day13.mycv04_crop|D:\workspace_python\HelloPython\day13\mycv04_crop.py
 day13.mycv05_degree|D:\workspace_python\HelloPython\day13\mycv05_degree.py
 day13.myomok20|D:\workspace_python\HelloPython\day13\myomok20.py
+day15.__init__|D:\workspace_python\HelloPython\day15|^
+day15.mycvmnist|D:\workspace_python\HelloPython\day15\mycvmnist.py
+day15.mymnist|D:\workspace_python\HelloPython\day15\mymnist.py
+day15.mymnist02|D:\workspace_python\HelloPython\day15\mymnist02.py
+day15.mymnist03|D:\workspace_python\HelloPython\day15\mymnist03.py
+day15.mymnist04|D:\workspace_python\HelloPython\day15\mymnist04.py
+day15.mynumpy|D:\workspace_python\HelloPython\day15\mynumpy.py
+day15.mynumpyargmax|D:\workspace_python\HelloPython\day15\mynumpyargmax.py
 myarray|D:\workspace_python\HelloPython\day08\myarray.py
 mycrawling04_stock|D:\workspace_python\HelloPython\day07\mycrawling04_stock.py
 mycrud|D:\workspace_python\HelloPython\day10\mycrud.py
