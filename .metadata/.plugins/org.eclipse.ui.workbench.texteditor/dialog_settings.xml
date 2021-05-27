@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="score"/>
+		<item key="selection" value="sound"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="sound"/>
+			<item value="print"/>
+			<item value="w1"/>
 			<item value="score"/>
 			<item value="bscore"/>
 			<item value="fitness"/>
@@ -20,9 +23,6 @@
 			<item value="flag_bw"/>
 			<item value="b"/>
 			<item value="index"/>
-			<item value="login"/>
-			<item value="naverlogin"/>
-			<item value="pb"/>
 		</list>
 		<list key="replacehistory">
 			<item value="/"/>

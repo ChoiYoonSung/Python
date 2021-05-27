@@ -17,7 +17,7 @@ pygame.display.set_caption('Snake')
 # generate 1st population
 genomes = [Genome() for _ in range(N_POPULATION)]
 best_genomes = None
-
+best_score = 0
 n_gen = 0
 while True:
   n_gen += 1
@@ -27,8 +27,9 @@ while True:
     fitness, score = snake.run()
 
     genome.fitness = fitness
-
-    # print('Generation #%s, Genome #%s, Fitness: %s, Score: %s' % (n_gen, i, fitness, score))
+    if best_score < score:
+        best_score = score
+    print('Generation #%s, Genome #%s, Fitness: %s, Score: %s, BestScore: %s' % (n_gen, i, fitness, score, best_score))
 
   if best_genomes is not None:
     genomes.extend(best_genomes)

@@ -108,7 +108,6 @@ class WindowClass(QMainWindow, form_class):
         i,j = getCom(self.arr2d)
         
         self.arr2d[i][j] = 2
-        print(i, j)
         
         self.white_cnt += 1
         self.stone = 2
